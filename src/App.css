@@ -1,0 +1,39 @@
+/* Общие стили для всего приложения */
+.App {
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+/* Стили для заголовка приложения */
+.App-header {
+  background-color: #ff6f61;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  color: white;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для галереи изображений */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Стили для элементов изображений */
+.image-item {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* При наведении на изображение */
+.image-item:hover {
+  transform: translateY(-5px);
+}
